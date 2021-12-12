@@ -89,6 +89,19 @@ header .menu-explore button{
 .fonctionnement i{
     margin-right: 20px;
     color: gray;
+    font-size: 20px;
+}
+
+.fonctionnement .numero{
+    position: absolute;
+    left: 15px;
+    background-color: #9356DC;
+    color: white;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50px;
 }
 
 .fonctionnement-dif{
@@ -100,6 +113,18 @@ header .menu-explore button{
     padding: 25px 0px 25px 40px;
     font-weight: bold;
     box-shadow: 7px 5px 5px 0px #E5E5E5;
+}
+
+.fonctionnement-dif .numero{
+    position: absolute;
+    left: 15px;
+    background-color: #9356DC;
+    color: white;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50px;
 }
 
 .fonctionnement-dif i{
@@ -153,6 +178,11 @@ header .menu-explore button{
     padding: 7px 10px 0px 0px;
 }
 
+.restaurant-description i:hover{
+    color: #9356DC;
+    transition: 0.4s;
+}
+
 footer{
     background-color: #545454;
 }
@@ -190,6 +220,123 @@ footer{
 
 .p-footer{
     margin-top: 8px;
+}
+
+
+/* PAGE LA PALETTE DU GOUT */
+
+header .logo_pdg img{
+    width: 200px;
+    padding: 20px 0px 10px 0px;
+}
+
+header .logo_pdg{
+    display: flex;
+    justify-content: center;
+}
+
+header .logo_pdg a{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 20px;
+    color: black;
+}
+
+header img{
+    width: 100%;
+}
+
+main{
+    background-color: #F3F3F3;
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+    top: -55px;
+}
+
+.container-palette_du_gout .titre_i{
+    display: flex;
+    padding: 40px 0px 20px 15px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.container-palette_du_gout .titre_i h1{
+    font-size: 25px;
+}
+
+.container-palette_du_gout .titre_i i{
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+.container-repas{
+    padding: 10px 10px 0px 10px;
+}
+
+.container-repas .repas{
+    padding-bottom: 35px;
+}
+
+.container-repas .repas h1{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.border_bottom{
+    border-bottom: 3px solid #99E2D0;
+    padding-top: 5px;
+    width: 12%;
+    margin-bottom: 20px;
+    margin-left: 7px;
+}
+
+.onglets-repas{
+    background-color: white;
+    margin-bottom: 13px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px 0px gray;
+}
+
+.onglets-repas div h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.onglets-repas div p{
+    font-size: 15px;
+}
+
+.onglets-repas .prix{
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 28px;
+}
+
+.button-commander{
+    text-align: center;
+}
+
+.container-palette_du_gout button{
+    margin: 0px 0px 40px 0px;
+    padding: 17px 45px 17px 45px;
+    border-radius: 50px;
+    border-style: solid;
+    color: white;
+    background: rgb(255,121,218);
+    background: -moz-linear-gradient(top,  rgb(255,121,218) 28%, rgb(147,86,220) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(255,121,218) 28%,rgb(147,86,220) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(255,121,218) 28%,rgb(147,86,220) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff79da', endColorstr='#9356dc',GradientType=0 ); /* IE6-9 */
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
 }
 
 
