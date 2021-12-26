@@ -1,7 +1,18 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("/font/Shrikhand-Regular.ttf") format("truetype");
+}
+
 *{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-family: "Roboto";
 }
 
 header .logo img{
@@ -27,7 +38,6 @@ header .localisation i{
 
 header .localisation p{
     padding: 15px 0px 15px 0px;
-    font-family: sans-serif;
     font-weight: 600;
 }
 
@@ -40,12 +50,10 @@ header .menu-explore{
 header .menu-explore h1{
     font-size: 22px;
     padding: 0px 45px 20px 45px;
-    font-family: sans-serif;
 }
 
 header .menu-explore p{
     padding: 0px 45px 30px 45px;
-    font-family: sans-serif;
 }
 
 header .menu-explore button{
@@ -57,12 +65,10 @@ header .menu-explore button{
     border: none;
     font-size: 16px;
     font-weight: 400;
-    font-family: sans-serif;
 }
 
 .container-fonctionnement{
     padding: 40px 20px 40px 20px;
-    font-family: sans-serif;
     background-color: white;
 }
 
@@ -136,7 +142,6 @@ header .menu-explore button{
 
 .container-restaurant h1{
     padding-top: 50px;
-    font-family: sans-serif;
 }
 
 .container-restaurant .container-restaurant__restaurant img{
@@ -157,7 +162,6 @@ header .menu-explore button{
 .container-restaurant__restaurant__restaurant-description{
     display: flex;
     padding: 15px;
-    font-family: sans-serif;
     justify-content: space-between;
 }
 
@@ -265,11 +269,11 @@ header .img-header-food{
     padding: 40px 0px 20px 15px;
     align-items: center;
     justify-content: space-between;
-    font-family: sans-serif;
 }
 
 .container-palette_du_gout .titre_i h1{
     font-size: 25px;
+    font-family: "Shrikhand";
 }
 
 .container-palette_du_gout .titre_i i{
@@ -286,9 +290,9 @@ header .img-header-food{
 }
 
 .container-repas .repas h1{
-    font-family: sans-serif;
     font-size: 15px;
     margin-left: 7px;
+    color: #3E3E3E;
 }
 
 .border_bottom{
@@ -310,7 +314,7 @@ header .img-header-food{
 }
 
 .onglets-repas div h2{
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 5px;
 }
 
@@ -346,20 +350,15 @@ header .img-header-food{
 }
 
 .container-palette_du_gout button{
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 30px 0px;
     padding: 17px 45px 17px 45px;
     border-radius: 50px;
     border-style: solid;
     color: white;
-    background: rgb(255,121,218);
-    background: -moz-linear-gradient(top,  rgb(255,121,218) 28%, rgb(147,86,220) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgb(255,121,218) 28%,rgb(147,86,220) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgb(255,121,218) 28%,rgb(147,86,220) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff79da', endColorstr='#9356dc',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(356deg, rgba(147,86,220,1) 20%, rgba(255,121,218,1) 100%);
     border: none;
     font-size: 20px;
     font-weight: 400;
-    font-family: sans-serif;
     cursor: pointer;
 }
 
