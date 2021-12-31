@@ -156,6 +156,28 @@ header .menu-explore button {
   color: #9356DC;
   transition: 0.4s;
 }
+.container-restaurant__restaurant--new {
+  position: absolute;
+  right: 37px;
+  top: 58em;
+  background-color: #99E2D0;
+  color: #2a9781;
+  font-weight: bold;
+  padding: 5px 12px 5px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.container-restaurant__restaurant--new1 {
+  position: absolute;
+  right: 37px;
+  top: 73.5em;
+  background-color: #99E2D0;
+  color: #2a9781;
+  font-weight: bold;
+  padding: 5px 12px 5px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+}
 
 footer {
   background-color: #545454;
