@@ -94,7 +94,7 @@ header{
             font-size: 20px;
         }
 
-        & .numero{
+        & .numero1, & .numero2{
             position: absolute;
             left: 15px;
             background-color: #9356DC;
@@ -116,7 +116,7 @@ header{
             font-weight: bold;
             box-shadow: 7px 5px 5px 0px #E5E5E5;
 
-            & .numero{
+            & .numero3{
                 position: absolute;
                 left: 15px;
                 background-color: #9356DC;
@@ -392,5 +392,88 @@ header{
 
 .button-commander{
     text-align: center;
+}
+
+// MEDIA QUERIES
+
+@media screen  and (min-width: 1280px){
+    // header{
+    //     & .logo{
+    //         text-align: left;
+    //         padding-left: 20px;
+    //     }
+
+    //     & .localisation{
+    //         justify-content: left;
+    //         padding-left: 20px;
+    //     }
+    // }
+
+    .container-fonctionnement{
+
+        &--displayflex{
+            display: flex;
+
+            .container-fonctionnement__fonctionnement{
+                margin-right: 100px;
+                padding: 25px 70px 25px 70px;
+
+                & .numero1{
+                    left: 10px;
+                }
+
+                & .numero2{
+                    left: 455px;
+                }
+
+                &--dif{
+                    padding: 25px 70px 25px 70px;
+
+                    & .numero3{
+                        left: 895px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-restaurant{
+        &--displayflex{
+            display: flex;
+            justify-content: space-between;
+
+            & .container-restaurant__restaurant{
+                width: 49%;
+
+                &--new{
+                    width: 62px;
+                    left: 830px;
+                    top: 710px;
+                }
+
+                &--new1{
+                    width: 62px;
+                    top: 710px;
+                }
+            }
+        }
+    }
+
+
+    // PAGE MENU
+
+    .container-palette_du_gout{
+
+        & .container-repas{
+            &--displayflex{
+                display: flex;
+
+                & .onglets-repas{
+                    width: 20%;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
 }
 
