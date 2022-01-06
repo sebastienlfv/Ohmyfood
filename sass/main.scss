@@ -70,6 +70,10 @@ header{
     }
 }
 
+main{
+    background-color: #F3F3F3;
+}
+
 .container-fonctionnement{
     padding: 40px 20px 40px 20px;
     background-color: white;
@@ -96,7 +100,7 @@ header{
 
         & .numero1, & .numero2{
             position: absolute;
-            left: 15px;
+            left: 8px;
             background-color: #9356DC;
             color: white;
             padding: 5px;
@@ -118,7 +122,7 @@ header{
 
             & .numero3{
                 position: absolute;
-                left: 15px;
+                left: 8px;
                 background-color: #9356DC;
                 color: white;
                 padding: 5px;
@@ -213,12 +217,12 @@ footer{
     background-color: #545454;
 
     & .footer-container{
-        padding: 20px 20px 25px 20px;
+        padding: 20px 20px 40px 20px;
         color: white;
 
         & img{
             width: 120px;
-            margin-bottom: 10px;
+            margin: 10px 0px 20px 0px;
         }
 
         & div{
@@ -246,6 +250,10 @@ footer{
             & p{
                 margin-top: 0;
             }
+        }
+
+        #partenaire{
+            margin-top: 8px;
         }
 
         & .p-footer{
@@ -286,10 +294,6 @@ header{
     }
 }
 
-.main--dif{
-    background-color: #F3F3F3;
-    border-radius: 30px 30px 0px 0px;
-}
 
 .container-palette_du_gout{
     background-color: #F3F3F3;
@@ -297,7 +301,7 @@ header{
     position: relative;
     top: -55px;
 
-    & .titre_i{
+    .container-palette_du_gout__titre_i{
         display: flex;
         padding: 40px 0px 20px 15px;
         align-items: center;
@@ -315,7 +319,6 @@ header{
     }
 
     & button{
-        margin: 0px 0px 30px 0px;
         padding: 17px 45px 17px 45px;
         border-radius: 50px;
         border-style: solid;
@@ -331,7 +334,7 @@ header{
 .container-repas{
     padding: 10px 10px 0px 10px;
 
-    & .repas{
+    .container-repas__repas{
         padding-bottom: 35px;
 
         & h1{
@@ -343,12 +346,12 @@ header{
             width: 35px;
             margin-bottom: 20px;
             margin-left: 7px;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
         }
     }
 }
 
-.onglets-repas{
+.container-repas__onglets-repas{
     background-color: white;
     margin-bottom: 13px;
     border-radius: 15px 15px 15px 15px;
@@ -396,66 +399,86 @@ header{
 
 // MEDIA QUERIES
 
+@media screen  and (min-width: 768px){
+    .container-restaurant{
+        &__restaurant{
+            &--new{
+                top: 55em;
+            }
+
+            &--new1{
+                top: 70.5em;
+            }
+            
+        }
+    }
+
+    footer{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+
+    }
+}
+
 @media screen  and (min-width: 1280px){
-    // header{
-    //     & .logo{
-    //         text-align: left;
-    //         padding-left: 20px;
-    //     }
-
-    //     & .localisation{
-    //         justify-content: left;
-    //         padding-left: 20px;
-    //     }
-    // }
-
     .container-fonctionnement{
-
-        &--displayflex{
+        h2{
             display: flex;
+            justify-content: center;
+        }
 
-            .container-fonctionnement__fonctionnement{
-                margin-right: 100px;
+        &__liste{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__fonctionnement{
+            margin-right: 100px;
+            padding: 25px 70px 25px 70px;
+
+            & .numero1{
+                left: 330px;
+            }
+
+            & .numero2{
+                left: 780px;
+            }
+
+            &--dif{
                 padding: 25px 70px 25px 70px;
 
-                & .numero1{
-                    left: 10px;
-                }
-
-                & .numero2{
-                    left: 455px;
-                }
-
-                &--dif{
-                    padding: 25px 70px 25px 70px;
-
-                    & .numero3{
-                        left: 895px;
-                    }
+                & .numero3{
+                    left: 1220px;
                 }
             }
         }
     }
 
     .container-restaurant{
-        &--displayflex{
+        &__liste{
             display: flex;
             justify-content: space-between;
+        }
 
-            & .container-restaurant__restaurant{
-                width: 49%;
+        &__restaurant{
+            width: 49%;
+            height: 200;
 
-                &--new{
-                    width: 62px;
-                    left: 830px;
-                    top: 710px;
-                }
-
-                &--new1{
-                    width: 62px;
-                    top: 710px;
-                }
+            &--new{
+                width: 62px;
+                left: 830px;
+                top: 710px;
             }
+
+            &--new1{
+                width: 62px;
+                top: 710px;
+            }
+        }
+
+        img{
+            height: 350px;
         }
     }
 
@@ -465,15 +488,17 @@ header{
     .container-palette_du_gout{
 
         & .container-repas{
-            &--displayflex{
+            &__liste{
                 display: flex;
+                justify-content: center;
+            }
 
-                & .onglets-repas{
-                    width: 20%;
-                    margin-right: 40px;
-                }
+            & .container-repas__onglets-repas{
+                width: 20%;
+                margin-right: 40px;
             }
         }
     }
 }
+
 
