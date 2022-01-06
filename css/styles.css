@@ -141,22 +141,22 @@ main {
   height: 150px;
   object-fit: cover;
 }
-.container-restaurant__restaurant__restaurant-description {
+.container-restaurant__restaurant .container-restaurant__restaurant-description {
   display: flex;
   padding: 15px;
   justify-content: space-between;
 }
-.container-restaurant__restaurant__restaurant-description div h3 {
+.container-restaurant__restaurant .container-restaurant__restaurant-description div h3 {
   font-size: 18px;
 }
-.container-restaurant__restaurant__restaurant-description div p {
+.container-restaurant__restaurant .container-restaurant__restaurant-description div p {
   margin-top: 5px;
 }
-.container-restaurant__restaurant__restaurant-description i {
+.container-restaurant__restaurant .container-restaurant__restaurant-description i {
   font-size: 25px;
   padding: 7px 10px 0px 0px;
 }
-.container-restaurant__restaurant__restaurant-description i:hover {
+.container-restaurant__restaurant .container-restaurant__restaurant-description i:hover {
   color: #9356DC;
   transition: 0.4s;
 }
@@ -363,16 +363,16 @@ header .img-header-food {
     padding: 25px 70px 25px 70px;
   }
   .container-fonctionnement__fonctionnement .numero1 {
-    left: 330px;
+    left: 320px;
   }
   .container-fonctionnement__fonctionnement .numero2 {
-    left: 780px;
+    left: 770px;
   }
   .container-fonctionnement__fonctionnement--dif {
     padding: 25px 70px 25px 70px;
   }
   .container-fonctionnement__fonctionnement--dif .numero3 {
-    left: 1220px;
+    left: 1210px;
   }
 
   .container-restaurant__liste {

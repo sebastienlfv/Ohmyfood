@@ -163,7 +163,7 @@ main{
             object-fit: cover;
         }
 
-        &__restaurant-description{
+        .container-restaurant__restaurant-description{
             display: flex;
             padding: 15px;
             justify-content: space-between;
@@ -438,18 +438,18 @@ header{
             padding: 25px 70px 25px 70px;
 
             & .numero1{
-                left: 330px;
+                left: 320px;
             }
 
             & .numero2{
-                left: 780px;
+                left: 770px;
             }
 
             &--dif{
                 padding: 25px 70px 25px 70px;
 
                 & .numero3{
-                    left: 1220px;
+                    left: 1210px;
                 }
             }
         }
