@@ -155,10 +155,16 @@ main {
 .container-restaurant__restaurant .container-restaurant__restaurant-description i {
   font-size: 25px;
   padding: 7px 10px 0px 0px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
 }
 .container-restaurant__restaurant .container-restaurant__restaurant-description i:hover {
+  -webkit-text-stroke-color: #9356DC;
+}
+.container-restaurant__restaurant .container-restaurant__restaurant-description i:active {
   color: #9356DC;
-  transition: 0.4s;
+  -webkit-text-stroke-color: #9356DC;
 }
 .container-restaurant__restaurant--new {
   position: absolute;
