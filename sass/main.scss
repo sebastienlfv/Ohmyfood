@@ -18,46 +18,46 @@
 }
 
 header{
-    & .logo{
+    .logo{
         text-align: center;
         box-shadow: 0px 0px 5px 0px #000;
     }
-    & .logo img{
+    .logo img{
         width: 200px;
         padding: 20px 0px 10px 0px;
     }
 
-    & .localisation{
+    .localisation{
         display: flex;
         background-color: #E5E5E5;
         justify-content: center;
 
-        & i{
+        i{
             padding: 15px 20px 15px 0px;
             font-size: 20px;
         }
 
-        & p{
+        p{
             padding: 15px 0px 15px 0px;
             font-weight: 600;
         }
     }
 
-    & .menu-explore{
+    .menu-explore{
         text-align: center;
         background-color: #F3F3F3;
         padding: 40px 0px 55px 0px;
 
-        & h1{
+        h1{
             font-size: 22px;
             padding: 0px 45px 20px 45px;
         }
 
-        & p{
+        p{
             padding: 0px 45px 30px 45px;
         }
 
-        & button{
+        button{
             padding: 17px 20px 17px 20px;
             border-radius: 50px;
             border-style: solid;
@@ -78,7 +78,7 @@ main{
     padding: 40px 20px 40px 20px;
     background-color: white;
 
-    & h2{
+    h2{
         margin-bottom: 30px;
     }
     
@@ -92,13 +92,13 @@ main{
         font-weight: bold;
         box-shadow: 7px 5px 5px 0px #E5E5E5;
 
-        & i{
+        i{
             margin-right: 20px;
             color: gray;
             font-size: 20px;
         }
 
-        & .numero1, & .numero2{
+        .numero1, .numero2{
             position: absolute;
             left: 8px;
             background-color: #9356DC;
@@ -120,7 +120,7 @@ main{
             font-weight: bold;
             box-shadow: 7px 5px 5px 0px #E5E5E5;
 
-            & .numero3{
+            .numero3{
                 position: absolute;
                 left: 8px;
                 background-color: #9356DC;
@@ -132,7 +132,7 @@ main{
                 border-radius: 50px;
             }
 
-            & i{
+            i{
                 margin-right: 20px;
                 color:mediumpurple;
             }
@@ -177,11 +177,11 @@ main{
 
                 }
             }
-            & div h3{
+            div h3{
                 font-size: 18px;
             }
 
-            & div p{
+            div p{
                 margin-top: 5px;
             }
 
@@ -232,34 +232,34 @@ footer{
         padding: 20px 20px 40px 20px;
         color: white;
 
-        & img{
+        img{
             width: 120px;
             margin: 10px 0px 20px 0px;
         }
 
-        & div{
+        div{
             display: flex;
 
-            & i{
+            i{
                 margin-right: 10px;
             }
         }
 
-        & #footer-container__partenaire{
+        #footer-container__partenaire{
             margin-top: 8px;
 
-            & .fas.fa-hands-helping{
+            .fas.fa-hands-helping{
                 font-size: 10px;
                 margin-top: 2px;
             }
 
-            & p{
+            p{
                 margin-top: 0;
             }
         }
 
-        & #footer-container__couvert{
-            & p{
+        #footer-container__couvert{
+            p{
                 margin-top: 0;
             }
         }
@@ -268,7 +268,7 @@ footer{
             margin-top: 8px;
         }
 
-        & .p-footer{
+        .p-footer{
             margin-top: 8px;
         }
     }
