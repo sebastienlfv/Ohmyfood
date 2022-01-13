@@ -68,7 +68,7 @@ main {
 .container-fonctionnement h2 {
   margin-bottom: 30px;
 }
-.container-fonctionnement__fonctionnement {
+.container-fonctionnement__details {
   display: flex;
   padding: 0px 0px 20px 0px;
   background-color: #F3F3F3;
@@ -78,12 +78,12 @@ main {
   font-weight: bold;
   box-shadow: 7px 5px 5px 0px #E5E5E5;
 }
-.container-fonctionnement__fonctionnement i {
+.container-fonctionnement__details i {
   margin-right: 20px;
   color: gray;
   font-size: 20px;
 }
-.container-fonctionnement__fonctionnement .numero1, .container-fonctionnement__fonctionnement .numero2 {
+.container-fonctionnement__details .numero1, .container-fonctionnement__details .numero2 {
   position: absolute;
   left: 8px;
   background-color: #9356DC;
@@ -94,7 +94,7 @@ main {
   text-align: center;
   border-radius: 50px;
 }
-.container-fonctionnement__fonctionnement--dif {
+.container-fonctionnement__details--dif {
   display: flex;
   padding: 0px 0px 20px 0px;
   background-color: #F3E4F8;
@@ -104,7 +104,7 @@ main {
   font-weight: bold;
   box-shadow: 7px 5px 5px 0px #E5E5E5;
 }
-.container-fonctionnement__fonctionnement--dif .numero3 {
+.container-fonctionnement__details--dif .numero3 {
   position: absolute;
   left: 8px;
   background-color: #9356DC;
@@ -115,7 +115,7 @@ main {
   text-align: center;
   border-radius: 50px;
 }
-.container-fonctionnement__fonctionnement--dif i {
+.container-fonctionnement__details--dif i {
   margin-right: 20px;
   color: mediumpurple;
 }
@@ -128,45 +128,38 @@ main {
 .container-restaurant h1 {
   padding-top: 50px;
 }
-.container-restaurant__restaurant {
+.container-restaurant__details {
   box-shadow: 7px 5px 5px 0px #E5E5E5;
   background-color: white;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
   width: 100%;
   margin-top: 20px;
 }
-.container-restaurant__restaurant img {
+.container-restaurant__details img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   height: 150px;
   object-fit: cover;
 }
-.container-restaurant__restaurant .container-restaurant__restaurant-description {
+.container-restaurant__details .container-restaurant__details-description {
   display: flex;
   padding: 15px;
   justify-content: space-between;
 }
-.container-restaurant__restaurant .container-restaurant__restaurant-description div h3 {
+.container-restaurant__details .container-restaurant__details-description div h3 {
   font-size: 18px;
 }
-.container-restaurant__restaurant .container-restaurant__restaurant-description div p {
+.container-restaurant__details .container-restaurant__details-description div p {
   margin-top: 5px;
 }
-.container-restaurant__restaurant .container-restaurant__restaurant-description i {
+.container-restaurant__details .container-restaurant__details-description i {
   font-size: 25px;
   padding: 7px 10px 0px 0px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 2px;
-  color: transparent;
 }
-.container-restaurant__restaurant .container-restaurant__restaurant-description i:hover {
-  -webkit-text-stroke-color: #9356DC;
+.container-restaurant__details .container-restaurant__details-description i:hover {
+  transition: opacity 1s;
 }
-.container-restaurant__restaurant .container-restaurant__restaurant-description i:active {
-  color: #9356DC;
-  -webkit-text-stroke-color: #9356DC;
-}
-.container-restaurant__restaurant--new {
+.container-restaurant__details--new {
   position: absolute;
   right: 37px;
   top: 58em;
@@ -177,7 +170,7 @@ main {
   font-size: 16px;
   border-radius: 2px;
 }
-.container-restaurant__restaurant--new1 {
+.container-restaurant__details--new1 {
   position: absolute;
   right: 37px;
   top: 73.5em;
@@ -250,27 +243,27 @@ header .img-header-food {
   object-fit: cover;
 }
 
-.container-palette_du_gout {
+.container-palette-du-gout {
   background-color: #F3F3F3;
   border-radius: 30px 30px 0px 0px;
   position: relative;
   top: -55px;
 }
-.container-palette_du_gout .container-palette_du_gout__titre_i {
+.container-palette-du-gout__titre {
   display: flex;
   padding: 40px 0px 20px 15px;
   align-items: center;
   justify-content: space-between;
 }
-.container-palette_du_gout .container-palette_du_gout__titre_i h1 {
+.container-palette-du-gout__titre h1 {
   font-size: 25px;
   font-family: "Shrikhand";
 }
-.container-palette_du_gout .container-palette_du_gout__titre_i i {
+.container-palette-du-gout__titre i {
   font-size: 25px;
   margin-right: 40px;
 }
-.container-palette_du_gout button {
+.container-palette-du-gout button {
   padding: 17px 45px 17px 45px;
   border-radius: 50px;
   border-style: solid;
@@ -285,10 +278,10 @@ header .img-header-food {
 .container-repas {
   padding: 10px 10px 0px 10px;
 }
-.container-repas .container-repas__repas {
+.container-repas .container-repas__details {
   padding-bottom: 35px;
 }
-.container-repas .container-repas__repas h1 {
+.container-repas .container-repas__details h1 {
   font-size: 15px;
   margin-left: 7px;
   color: #3E3E3E;
@@ -342,10 +335,10 @@ header .img-header-food {
 }
 
 @media screen and (min-width: 768px) {
-  .container-restaurant__restaurant--new {
+  .container-restaurant__details--new {
     top: 55em;
   }
-  .container-restaurant__restaurant--new1 {
+  .container-restaurant__details--new1 {
     top: 70.5em;
   }
 
@@ -364,20 +357,20 @@ header .img-header-food {
     display: flex;
     justify-content: center;
   }
-  .container-fonctionnement__fonctionnement {
+  .container-fonctionnement__details {
     margin-right: 100px;
     padding: 25px 70px 25px 70px;
   }
-  .container-fonctionnement__fonctionnement .numero1 {
+  .container-fonctionnement__details .numero1 {
     left: 320px;
   }
-  .container-fonctionnement__fonctionnement .numero2 {
+  .container-fonctionnement__details .numero2 {
     left: 770px;
   }
-  .container-fonctionnement__fonctionnement--dif {
+  .container-fonctionnement__details--dif {
     padding: 25px 70px 25px 70px;
   }
-  .container-fonctionnement__fonctionnement--dif .numero3 {
+  .container-fonctionnement__details--dif .numero3 {
     left: 1210px;
   }
 
@@ -385,16 +378,16 @@ header .img-header-food {
     display: flex;
     justify-content: space-between;
   }
-  .container-restaurant__restaurant {
+  .container-restaurant__details {
     width: 49%;
     height: 200;
   }
-  .container-restaurant__restaurant--new {
+  .container-restaurant__details--new {
     width: 62px;
     left: 830px;
     top: 710px;
   }
-  .container-restaurant__restaurant--new1 {
+  .container-restaurant__details--new1 {
     width: 62px;
     top: 710px;
   }
@@ -402,11 +395,11 @@ header .img-header-food {
     height: 350px;
   }
 
-  .container-palette_du_gout .container-repas__liste {
+  .container-palette-du-gout .container-repas__liste {
     display: flex;
     justify-content: center;
   }
-  .container-palette_du_gout .container-repas .container-repas__onglets-repas {
+  .container-palette-du-gout .container-repas .container-repas__onglets-repas {
     width: 20%;
     margin-right: 40px;
   }
