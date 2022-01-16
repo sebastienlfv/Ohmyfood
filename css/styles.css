@@ -6,6 +6,16 @@
   font-family: "Shrikhand";
   src: url("/font/Shrikhand-Regular.ttf") format("truetype");
 }
+@keyframes transition-repas {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -182,10 +192,10 @@ main {
 .container-restaurant__details__coeur .fas.fa-heart {
   display: none;
   color: #9356DC;
+  transition: 0.2s;
 }
 .container-restaurant__details__coeur:hover .far.fa-heart {
   color: #9356DC;
-  transition: 0.2s;
 }
 .container-restaurant__details__coeur:active .fas.fa-heart {
   display: block;
@@ -305,6 +315,16 @@ header .img-header-food {
   padding-bottom: 5px;
 }
 
+.container-repas__onglets-repas:nth-child(2) {
+  animation-name: transition-repas;
+  animation-delay: 0.1s;
+}
+
+.container-repas__onglets-repas:nth-child(3) {
+  animation-name: transition-repas;
+  animation-delay: 0.2s;
+}
+
 .container-repas__onglets-repas {
   background-color: white;
   margin-bottom: 13px;
@@ -313,6 +333,8 @@ header .img-header-food {
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 2px 12px 0px gray;
+  animation-name: transition-repas;
+  animation-duration: 1s;
 }
 .container-repas__onglets-repas div h2 {
   font-size: 17px;
