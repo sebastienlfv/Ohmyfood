@@ -155,9 +155,7 @@ main {
 .container-restaurant__details .container-restaurant__details-description i {
   font-size: 25px;
   padding: 7px 10px 0px 0px;
-}
-.container-restaurant__details .container-restaurant__details-description i:hover {
-  transition: opacity 1s;
+  transition: 0.2s;
 }
 .container-restaurant__details--new {
   position: absolute;
@@ -180,6 +178,20 @@ main {
   padding: 5px 12px 5px 12px;
   font-size: 16px;
   border-radius: 2px;
+}
+.container-restaurant__details__coeur .fas.fa-heart {
+  display: none;
+  color: #9356DC;
+}
+.container-restaurant__details__coeur:hover .far.fa-heart {
+  color: #9356DC;
+  transition: 0.2s;
+}
+.container-restaurant__details__coeur:active .fas.fa-heart {
+  display: block;
+}
+.container-restaurant__details__coeur:active .far.fa-heart {
+  display: none;
 }
 
 footer {

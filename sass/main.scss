@@ -188,12 +188,7 @@ main{
             i{
                 font-size: 25px;
                 padding: 7px 10px 0px 0px;
-                // opacity: 0;
-
-                &:hover{
-                    transition: opacity 1s;
-                    
-                }
+                transition: 0.2s;
             }
 
 
@@ -221,6 +216,30 @@ main{
             padding: 5px 12px 5px 12px;
             font-size: 16px;
             border-radius: 2px;
+        }
+
+        &__coeur{
+            .fas.fa-heart{
+                display: none;
+                color: #9356DC;
+            }
+
+            &:hover{
+                .far.fa-heart{
+                    color: #9356DC;
+                    transition: 0.2s;
+                }
+            }
+
+            &:active{
+                .fas.fa-heart{
+                    display: block;
+                }
+
+                .far.fa-heart{
+                    display: none;  
+                }
+            }
         }
     }
 }
