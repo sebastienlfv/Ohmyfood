@@ -370,14 +370,6 @@ header{
             padding-bottom: 5px;
         }
     }
-
-    .test-animation{
-        display: flex;
-
-        .animation{
-            
-        }
-    }
 }
 
 .repas__onglets-repas:nth-child(2){
@@ -426,8 +418,7 @@ header{
         border-radius: 0px 10px 10px 0px;
         position: absolute;
         top: 0px;
-        right: 0;
-        display: block;
+        right: 0px;
     }
 }
 
