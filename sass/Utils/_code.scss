@@ -358,7 +358,7 @@ header{
     .repas__details{
         padding-bottom: 35px;
 
-        & h1{
+        h1{
             font-size: 15px;
             margin-left: 7px;
             color: #3E3E3E;
@@ -368,6 +368,14 @@ header{
             margin-bottom: 20px;
             margin-left: 7px;
             padding-bottom: 5px;
+        }
+    }
+
+    .test-animation{
+        display: flex;
+
+        .animation{
+            
         }
     }
 }
@@ -510,13 +518,20 @@ header{
 
     .palette-du-gout{
 
-        & .repas{
+        .repas{
+            &__details{
+                h1{
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+            }
+
             &__liste{
                 display: flex;
                 justify-content: center;
             }
 
-            & .repas__onglets-repas{
+            .repas__onglets-repas{
                 width: 20%;
                 margin-right: 40px;
             }
