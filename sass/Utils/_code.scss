@@ -400,6 +400,7 @@ header{
     box-shadow: 2px 2px 12px 0px gray;
     animation-name: transition-repas;
     animation-duration: 1s;
+    position: relative;
 
     & div h2{
         font-size: 17px;
@@ -420,17 +421,13 @@ header{
         align-items: center;
         font-size: 20px;
         background-color: #99E2D0;
-        padding: 15px 15px 15px 15px;
+        padding: 22px 20px 25px 20px;
         color: white;
         border-radius: 0px 10px 10px 0px;
-        display: none;
-    }
-
-    & i:hover{
-        display: flex;
-        cursor: pointer;
-        background-color: red;
-        transition: 0.6s;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        display: block;
     }
 }
 
