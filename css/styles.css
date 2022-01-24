@@ -69,6 +69,7 @@ main {
   padding: 25px 0px 25px 40px;
   font-weight: bold;
   box-shadow: 7px 5px 5px 0px #E5E5E5;
+  position: relative;
 }
 .container-fonctionnement__details i {
   margin-right: 20px;
@@ -77,7 +78,7 @@ main {
 }
 .container-fonctionnement__details .numero1, .container-fonctionnement__details .numero2 {
   position: absolute;
-  left: 8px;
+  left: -12px;
   background-color: #9356DC;
   color: white;
   padding: 5px;
@@ -95,10 +96,11 @@ main {
   padding: 25px 0px 25px 40px;
   font-weight: bold;
   box-shadow: 7px 5px 5px 0px #E5E5E5;
+  position: relative;
 }
 .container-fonctionnement__details--dif .numero3 {
   position: absolute;
-  left: 8px;
+  left: -12px;
   background-color: #9356DC;
   color: white;
   padding: 5px;
@@ -182,7 +184,9 @@ main {
 }
 .restaurant__heart--filled {
   opacity: 0;
-  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurant__heart--filled:hover {
   opacity: 1;
@@ -299,9 +303,7 @@ header .img-header-food {
   margin-left: 7px;
   padding-bottom: 5px;
 }
-.repas .test-animation {
-  display: flex;
-}
+
 .repas__onglets-repas:nth-child(2) {
   animation-name: transition-repas;
   animation-delay: 0.1s;
@@ -318,17 +320,16 @@ header .img-header-food {
   border-radius: 15px 15px 15px 15px;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
   box-shadow: 2px 2px 12px 0px gray;
   animation-name: transition-repas;
   animation-duration: 1s;
   position: relative;
 }
-.repas__onglets-repas div h2 {
+.repas__onglets-repas h2 {
   font-size: 17px;
   margin-bottom: 5px;
 }
-.repas__onglets-repas div p {
+.repas__onglets-repas p {
   font-size: 15px;
 }
 .repas__onglets-repas .prix {
@@ -340,13 +341,15 @@ header .img-header-food {
   align-items: center;
   font-size: 20px;
   background-color: #99E2D0;
-  padding: 22px 20px 25px 20px;
   color: white;
   border-radius: 0px 10px 10px 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  display: block;
+  display: flex;
+  width: 0px;
+  justify-content: center;
+}
+.repas__onglets-repas:hover i {
+  width: 60px;
+  transition: 0.4s;
 }
 
 .button-commander {
@@ -374,17 +377,8 @@ header .img-header-food {
     margin-right: 100px;
     padding: 25px 70px 25px 70px;
   }
-  .container-fonctionnement__details .numero1 {
-    left: 320px;
-  }
-  .container-fonctionnement__details .numero2 {
-    left: 770px;
-  }
   .container-fonctionnement__details--dif {
     padding: 25px 70px 25px 70px;
-  }
-  .container-fonctionnement__details--dif .numero3 {
-    left: 1210px;
   }
 
   .restaurant__liste {
