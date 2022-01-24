@@ -320,10 +320,14 @@ header .img-header-food {
   border-radius: 15px 15px 15px 15px;
   padding: 10px;
   display: flex;
+  justify-content: space-between;
   box-shadow: 2px 2px 12px 0px gray;
   animation-name: transition-repas;
   animation-duration: 1s;
   position: relative;
+}
+.repas__onglets-repas div:nth-child(2) {
+  display: flex;
 }
 .repas__onglets-repas h2 {
   font-size: 17px;
