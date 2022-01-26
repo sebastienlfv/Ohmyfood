@@ -53,6 +53,14 @@ main {
   background-color: #F3F3F3;
 }
 
+.d2 {
+  animation-delay: 0.05s;
+}
+
+.d3 {
+  animation-delay: 0.1s;
+}
+
 .container-fonctionnement {
   padding: 40px 20px 40px 20px;
   background-color: white;
@@ -318,13 +326,21 @@ header .img-header-food {
   background-color: white;
   margin-bottom: 13px;
   border-radius: 15px 15px 15px 15px;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 2px 12px 0px gray;
   animation-name: transition-repas;
   animation-duration: 1s;
   position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.repas__onglets-repas div:nth-child(1) {
+  padding: 10px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .repas__onglets-repas div:nth-child(2) {
   display: flex;
@@ -332,34 +348,83 @@ header .img-header-food {
 .repas__onglets-repas h2 {
   font-size: 17px;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .repas__onglets-repas p {
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .repas__onglets-repas .prix {
   font-weight: bold;
   margin-right: 10px;
   margin-top: 28px;
 }
+.repas__onglets-repas .check {
+  background-color: white;
+}
 .repas__onglets-repas i {
   align-items: center;
   font-size: 20px;
-  background-color: #99E2D0;
   color: white;
   border-radius: 0px 10px 10px 0px;
   display: flex;
   width: 0px;
   justify-content: center;
+  transition: 0.4s;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.repas__onglets-repas:hover .check {
+  background-color: #99E2D0;
 }
 .repas__onglets-repas:hover i {
   width: 60px;
   transition: 0.4s;
+  display: flex;
+  animation-name: animation-verif;
+  transform: rotate(-360deg);
+  transition-duration: 1s;
 }
 
 .button-commander {
   text-align: center;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/font/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("/font/Shrikhand-Regular.ttf") format("truetype");
+}
+@keyframes transition-repas {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes animation-verif {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
 @media screen and (min-width: 768px) {
   footer .footer-container {
     justify-content: space-around;
@@ -418,24 +483,6 @@ header .img-header-food {
   .palette-du-gout .repas .repas__onglets-repas {
     width: 20%;
     margin-right: 40px;
-  }
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("/font/Roboto-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Shrikhand";
-  src: url("/font/Shrikhand-Regular.ttf") format("truetype");
-}
-@keyframes transition-repas {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
 

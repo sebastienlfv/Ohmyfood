@@ -1,0 +1,89 @@
+// MEDIA QUERIES
+
+@media screen  and (min-width: 768px){
+    footer{
+        .footer-container{
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+@media screen  and (min-width: 1280px){
+    .container-fonctionnement{
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__liste{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__details{
+            margin-right: 100px;
+            padding: 25px 70px 25px 70px;
+
+            &--dif{
+                padding: 25px 70px 25px 70px;
+            }
+        }
+    }
+
+    .restaurant{
+        &__liste{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__details{
+            width: 49%;
+            height: 200;
+
+            &--new{
+                width: 62px;
+                right: 15px;
+                top: 15px;
+            }
+
+            &--new1{
+                width: 62px;
+                right: 15px;
+                top: 15px;
+            }
+        }
+
+        img{
+            height: 350px;
+        }
+    }
+
+
+    // PAGE MENU
+
+    .palette-du-gout{
+
+        .repas{
+            &__details{
+
+                h1{
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__liste{
+                display: flex;
+                justify-content: center;
+            }
+
+            .repas__onglets-repas{
+                width: 20%;
+                margin-right: 40px;
+            }
+        }
+    }
+}
