@@ -56,31 +56,28 @@ main {
 .loader-container {
   position: absolute;
   background: #f1f1f1;
-  width: 100vw;
+  width: 99.14vw;
   height: 100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   transition: opacity 1s ease-in-out;
   z-index: 99;
-  animation-name: fin-loader;
-  animation-duration: 2s;
+  animation: fin-loader 3s;
 }
-
-.dot {
+.loader-container .dot {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: black;
   margin: 0 15px;
+  display: flex;
   animation: loader infinite 0.3s alternate;
 }
-
-.d2 {
+.loader-container .d2 {
   animation-delay: 0.05s;
 }
-
-.d3 {
+.loader-container .d3 {
   animation-delay: 0.1s;
 }
 
@@ -91,9 +88,11 @@ main {
 .container-fonctionnement h2 {
   margin-bottom: 30px;
 }
+.container-fonctionnement__liste {
+  padding: 0px 10px;
+}
 .container-fonctionnement__details {
   display: flex;
-  padding: 0px 0px 20px 0px;
   background-color: #F3F3F3;
   margin-bottom: 15px;
   border-radius: 20px 20px 20px 20px;
@@ -109,6 +108,7 @@ main {
 }
 .container-fonctionnement__details .numero1, .container-fonctionnement__details .numero2 {
   position: absolute;
+  top: 20px;
   left: -12px;
   background-color: #9356DC;
   color: white;
@@ -131,6 +131,7 @@ main {
 }
 .container-fonctionnement__details--dif .numero3 {
   position: absolute;
+  top: 20px;
   left: -12px;
   background-color: #9356DC;
   color: white;
@@ -435,23 +436,17 @@ header .img-header-food {
     transform: translateY(0px);
   }
 }
-@keyframes animation-verif {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
 @keyframes loader {
-  100% {
+  0% {
     transform: translateY(-30px);
+  }
+  100% {
     display: none;
   }
 }
 @keyframes fin-loader {
   0% {
-    display: flex;
+    display: none;
     z-index: 99;
   }
   100% {

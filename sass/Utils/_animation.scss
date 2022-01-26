@@ -10,26 +10,19 @@
     }
 }
 
-@keyframes animation-verif{
-    0%{
-        transform: rotate(0deg);
-    }
-
-    100%{
-        transform: rotate(180deg);
-    }
-}   
-
 @keyframes loader{
-    100%{
+    0%{
         transform: translateY(-30px);
+    }
+
+    100%{
         display: none;
     }
 }
 
 @keyframes fin-loader {
     0%{
-        display: flex;
+        display: none;
         z-index: 99;
     }
 
