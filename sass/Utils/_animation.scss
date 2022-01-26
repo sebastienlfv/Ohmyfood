@@ -21,7 +21,11 @@
 }   
 
 @keyframes loader{
+    0%{
+        transform: translateY(0px);
+    }
     100%{
-        transform: translateY(-30px);       
+        transform: translateY(-30px);
+           
     }
 }
