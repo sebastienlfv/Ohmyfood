@@ -72,6 +72,8 @@ main{
     align-items: center;
     transition: opacity 1s ease-in-out;
     z-index: 99;
+    animation-name: fin-loader;
+    animation-duration: 2s;
 }
 
 .dot{

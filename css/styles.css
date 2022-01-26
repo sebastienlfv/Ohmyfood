@@ -63,6 +63,8 @@ main {
   align-items: center;
   transition: opacity 1s ease-in-out;
   z-index: 99;
+  animation-name: fin-loader;
+  animation-duration: 2s;
 }
 
 .dot {
@@ -442,11 +444,19 @@ header .img-header-food {
   }
 }
 @keyframes loader {
-  0% {
-    transform: translateY(0px);
-  }
   100% {
     transform: translateY(-30px);
+    display: none;
+  }
+}
+@keyframes fin-loader {
+  0% {
+    display: flex;
+    z-index: 99;
+  }
+  100% {
+    display: none;
+    z-index: -1;
   }
 }
 @media screen and (min-width: 768px) {
