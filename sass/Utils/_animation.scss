@@ -16,18 +16,23 @@
     }
 
     100%{
+        visibility: hidden;
         display: none;
     }
 }
 
 @keyframes fin-loader {
     0%{
-        display: none;
+        display: flex;
         z-index: 99;
     }
 
     100%{
         display: none;
         z-index: -1;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }

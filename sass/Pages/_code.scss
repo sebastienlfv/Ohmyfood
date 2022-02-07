@@ -70,7 +70,6 @@ main{
     display: none;
     justify-content: center;
     align-items: center;
-    transition: opacity 1s ease-in-out;
     z-index: 99;
     animation: fin-loader 3s;
 
@@ -171,7 +170,7 @@ main{
     background-color: #F3F3F3;
     padding-bottom: 100px;
 
-    h1{
+    h2{
         padding-top: 50px;
     }
 
@@ -279,7 +278,7 @@ footer{
 
         img{
             width: 120px;
-            margin: 10px 0px 20px 0px;
+            margin: 10px 0px 0px 0px;
         }
 
         div{
@@ -394,7 +393,7 @@ header{
     .repas__details{
         padding-bottom: 35px;
 
-        h1{
+        h2{
             font-size: 15px;
             margin-left: 7px;
             color: #3E3E3E;
@@ -443,7 +442,7 @@ header{
         display: flex;
     }
 
-    h2{
+    h3{
         font-size: 17px;
         margin-bottom: 5px;
         overflow:hidden;

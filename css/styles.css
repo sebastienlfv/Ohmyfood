@@ -61,7 +61,6 @@ main {
   display: none;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease-in-out;
   z-index: 99;
   animation: fin-loader 3s;
 }
@@ -151,7 +150,7 @@ main {
   background-color: #F3F3F3;
   padding-bottom: 100px;
 }
-.restaurant h1 {
+.restaurant h2 {
   padding-top: 50px;
 }
 .restaurant__details {
@@ -234,7 +233,7 @@ footer .footer-container {
 }
 footer .footer-container img {
   width: 120px;
-  margin: 10px 0px 20px 0px;
+  margin: 10px 0px 0px 0px;
 }
 footer .footer-container div {
   display: flex;
@@ -324,7 +323,7 @@ header .img-header-food {
 .repas .repas__details {
   padding-bottom: 35px;
 }
-.repas .repas__details h1 {
+.repas .repas__details h2 {
   font-size: 15px;
   margin-left: 7px;
   color: #3E3E3E;
@@ -369,7 +368,7 @@ header .img-header-food {
 .repas__onglets-repas div:nth-child(2) {
   display: flex;
 }
-.repas__onglets-repas h2 {
+.repas__onglets-repas h3 {
   font-size: 17px;
   margin-bottom: 5px;
   overflow: hidden;
@@ -441,17 +440,22 @@ header .img-header-food {
     transform: translateY(-30px);
   }
   100% {
+    visibility: hidden;
     display: none;
   }
 }
 @keyframes fin-loader {
   0% {
-    display: none;
+    display: flex;
     z-index: 99;
   }
   100% {
     display: none;
     z-index: -1;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 @media screen and (min-width: 768px) {
