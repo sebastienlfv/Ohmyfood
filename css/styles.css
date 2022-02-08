@@ -58,11 +58,12 @@ main {
   background: #f1f1f1;
   width: 99.14vw;
   height: 100vh;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
   animation: fin-loader 3s;
+  animation-fill-mode: forwards;
 }
 .loader-container .dot {
   width: 50px;
@@ -489,7 +490,7 @@ header .img-header-food {
   }
   .restaurant__details {
     width: 49%;
-    height: 200;
+    height: 430px;
   }
   .restaurant__details--new {
     width: 62px;
