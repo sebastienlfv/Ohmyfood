@@ -55,7 +55,7 @@ header{
             font-size: 16px;
             font-weight: 400;
             cursor: pointer;
-            box-shadow: 7px 5px 5px 0px #E5E5E5;
+            @include box;
             transition: 0.4s;
 
             &:hover{
@@ -399,7 +399,7 @@ header{
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
-        box-shadow: 7px 5px 5px 0px #E5E5E5;
+        @include box;
         
         &:hover{
             background: linear-gradient(356deg, rgb(153, 104, 214) 20%, rgb(231, 123, 200) 100%);
