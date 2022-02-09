@@ -54,6 +54,15 @@ header{
             border: none;
             font-size: 16px;
             font-weight: 400;
+            cursor: pointer;
+            box-shadow: 7px 5px 5px 0px #E5E5E5;
+            transition: 0.4s;
+
+            &:hover{
+                background: linear-gradient(356deg, rgb(153, 104, 214) 20%, rgb(231, 123, 200) 100%);
+                box-shadow: 10px 10px 5px 0px #E5E5E5;
+                transition: 0.4s;
+            }
         }
     }
 }
@@ -67,7 +76,7 @@ main{
     background: #f1f1f1;
     width: 99.14vw;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 99;
@@ -315,6 +324,11 @@ footer{
 
         .p-footer{
             margin-top: 8px;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -385,6 +399,13 @@ header{
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
+        box-shadow: 7px 5px 5px 0px #E5E5E5;
+        
+        &:hover{
+            background: linear-gradient(356deg, rgb(153, 104, 214) 20%, rgb(231, 123, 200) 100%);
+            box-shadow: 10px 10px 5px 0px #E5E5E5;
+            transition: 0.4s;
+        }
     }
 }
 
