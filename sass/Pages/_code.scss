@@ -76,7 +76,7 @@ main{
     background: #f1f1f1;
     width: 99.14vw;
     height: 100vh;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 99;
@@ -429,17 +429,205 @@ header{
     }
 }
 
-.repas__onglets-repas:nth-child(2){
+.repas__onglets-repas__entre:nth-child(2){
     animation-name: transition-repas;
     animation-delay: 0.1s;
 }
 
-.repas__onglets-repas:nth-child(3){
+.repas__onglets-repas__entre:nth-child(3){
     animation-name: transition-repas;
     animation-delay: 0.2s;
 }
 
-.repas__onglets-repas{
+.repas__onglets-repas__entre{
+    background-color: white;
+    margin-bottom: 13px;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px 0px gray;
+    animation-name: transition-repas;
+    animation-duration: 1s;
+    position: relative;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    div:nth-child(1){
+        padding: 10px 10px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    div:nth-child(2){
+        display: flex;
+    }
+
+    h3{
+        font-size: 17px;
+        margin-bottom: 5px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    p{
+        font-size: 15px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    & .prix{
+        font-weight: bold;
+        margin-right: 10px;
+        margin-top: 28px;
+    }
+
+    .check{
+        background-color: white;
+    }
+
+    & i{
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        width: 0px;
+        justify-content: center;
+        transition: 0.4s;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    &:hover{
+        .check{
+            background-color: #99E2D0;
+        }
+
+        i{
+            width: 60px;
+            transition: 0.4s;
+            display: flex;
+            animation-name: animation-verif;
+            transform:rotate(-360deg);
+            transition-duration:1s;
+        }
+    }
+}
+
+.repas__onglets-repas__plats:nth-child(1){
+    animation-name: transition-repas;
+    animation-delay: 0.3s;
+}
+
+.repas__onglets-repas__plats:nth-child(2){
+    animation-name: transition-repas;
+    animation-delay: 0.4s;
+}
+
+.repas__onglets-repas__plats:nth-child(3){
+    animation-name: transition-repas;
+    animation-delay: 0.5s;
+}
+
+.repas__onglets-repas__plats{
+    background-color: white;
+    margin-bottom: 13px;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px 0px gray;
+    animation-name: transition-repas;
+    animation-duration: 1s;
+    position: relative;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    div:nth-child(1){
+        padding: 10px 10px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    div:nth-child(2){
+        display: flex;
+    }
+
+    h3{
+        font-size: 17px;
+        margin-bottom: 5px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    p{
+        font-size: 15px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    & .prix{
+        font-weight: bold;
+        margin-right: 10px;
+        margin-top: 28px;
+    }
+
+    .check{
+        background-color: white;
+    }
+
+    & i{
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        width: 0px;
+        justify-content: center;
+        transition: 0.4s;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    &:hover{
+        .check{
+            background-color: #99E2D0;
+        }
+
+        i{
+            width: 60px;
+            transition: 0.4s;
+            display: flex;
+            animation-name: animation-verif;
+            transform:rotate(-360deg);
+            transition-duration:1s;
+        }
+    }
+}
+
+.repas__onglets-repas__desserts:nth-child(1){
+    animation-name: transition-repas;
+    animation-delay: 0.6s;
+}
+
+.repas__onglets-repas__desserts:nth-child(2){
+    animation-name: transition-repas;
+    animation-delay: 0.7s;
+}
+
+.repas__onglets-repas__desserts:nth-child(3){
+    animation-name: transition-repas;
+    animation-delay: 0.8s;
+}
+
+.repas__onglets-repas__desserts{
     background-color: white;
     margin-bottom: 13px;
     border-radius: 15px 15px 15px 15px;
