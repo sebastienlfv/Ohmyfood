@@ -698,7 +698,15 @@ header .img-header-food {
     display: flex;
     justify-content: center;
   }
-  .palette-du-gout .repas .repas__onglets-repas {
+  .palette-du-gout .repas .repas__onglets-repas__entre {
+    width: 20%;
+    margin-right: 40px;
+  }
+  .palette-du-gout .repas .repas__onglets-repas__plats {
+    width: 20%;
+    margin-right: 40px;
+  }
+  .palette-du-gout .repas .repas__onglets-repas__desserts {
     width: 20%;
     margin-right: 40px;
   }
