@@ -448,6 +448,8 @@ header{
     box-shadow: 2px 2px 12px 0px gray;
     animation-name: transition-repas;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     position: relative;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -542,6 +544,8 @@ header{
     box-shadow: 2px 2px 12px 0px gray;
     animation-name: transition-repas;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     position: relative;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -636,6 +640,8 @@ header{
     box-shadow: 2px 2px 12px 0px gray;
     animation-name: transition-repas;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     position: relative;
     overflow:hidden;
     text-overflow:ellipsis;
